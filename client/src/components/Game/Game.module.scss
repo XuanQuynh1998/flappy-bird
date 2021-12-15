@@ -1,0 +1,53 @@
+.game {
+  $bg: url("../../assets/images/background-day.png");
+  $base: url("../../assets/images/base.png");
+  $gameOver: url("../../assets/images/gameover.png");
+
+  height: 100vh;
+  background: $bg center center;
+  background-size: contain;
+  position: relative;
+
+  .base {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    background: $base center center;
+    background-size: contain;
+    z-index: 10;
+  }
+
+  .gameOver {
+    background: $gameOver no-repeat center center;
+    position: absolute;
+    inset: 0;
+    bottom: 10rem;
+    z-index: 10;
+  }
+
+  .point {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    z-index: 10;
+  }
+
+  .title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    inset: 0;
+    z-index: 10;
+
+    .subtitle {
+      margin-top: 1rem;
+    }
+  }
+}

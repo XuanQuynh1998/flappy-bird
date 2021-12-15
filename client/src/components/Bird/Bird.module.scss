@@ -1,0 +1,15 @@
+.bird {
+  --bird-top: -1000;
+  $bird-left: 120px;
+  $bird-width: 34px;
+  $bird-height: 24px;
+  $bird-img: url("../../assets/images/bluebird.png");
+
+  position: absolute;
+  background: $bird-img no-repeat center center;
+  width: $bird-width;
+  height: $bird-height;
+  left: $bird-left;
+  top: calc(var(--bird-top) * 1px);
+  border-radius: 50%;
+}
